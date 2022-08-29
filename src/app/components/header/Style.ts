@@ -12,7 +12,7 @@ export const HeaderMainDiv = styled.div`
   background-color: #001121;
 `;
 interface I_Props {
-  display?: boolean;
+  displayy?: string;
 }
 export const HeaderSubDiv = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export const HeaderSubDivElements = styled.div<I_Props>`
   padding: 20px;
   position: relative;
   @media screen and (max-width: 1150px) {
-    display: ${(props) => (props.display ? "flex" : "none")};
+    display: ${(props) => (props.displayy === "flex" ? "flex" : "none")};
   }
 `;
 export const HeaderLogo = styled.img`

@@ -20,6 +20,9 @@ export const MiddleContainer1 = styled.div`
 `;
 export const LogoImg = styled.img`
   height: 120px;
+  @media screen and (max-width: 400px) {
+    height: 80px;
+  }
 `;
 export const FlexContainer = styled.div`
   display: flex;
@@ -34,9 +37,13 @@ export const FlexContainer = styled.div`
   }
 `;
 interface I_Props {
-  value: number;
+  value?: number;
+  data: string;
 }
-export const FlexContainerItems = styled.div<I_Props>`
+
+export const FlexContainerItems = styled.div.attrs((props: I_Props) => ({
+  "data-aos": props.data,
+}))<I_Props>`
   max-width: ${(props) => props.value}px;
   width: 100%;
 `;
@@ -87,21 +94,29 @@ export const MidImage = styled.img`
 `;
 
 export const MidImage2 = styled.img`
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  width: 100%;
   opacity: 0.7;
+  @media screen and (max-width: 600px) {
+    width: 50px;
+  }
 `;
 export const AbsoluteDiv = styled.div`
   position: absolute;
-  top: 33%;
+  top: 28%;
   left: 49%;
 `;
-export const RelativeDiv = styled.div`
+export const RelativeDiv = styled.div.attrs((props: I_Props) => ({
+  "data-aos": props.data,
+}))<I_Props>`
   position: relative;
 `;
 export const Span1 = styled.p`
   font-size: 20px;
   margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 export const GridImg = styled.img`
   max-width: 60px;
@@ -123,7 +138,9 @@ export const GridContainer = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
-export const GridElement = styled.div``;
+export const GridElement = styled.div.attrs((props: I_Props) => ({
+  "data-aos": props.data,
+}))<I_Props>``;
 export const GridPara = styled.p`
   font-size: 18px;
   color: #888a8b;

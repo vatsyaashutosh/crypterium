@@ -16,7 +16,7 @@ export const MainHeading = styled.h1`
   font-size: 70px;
   text-align: center;
   font-family: sans-serif;
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 750px) {
     font-size: 45px;
   }
   color: white;
@@ -25,6 +25,9 @@ export const MiddlePara = styled.p`
   color: white;
   text-align: center;
   font-size: 20px;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 interface I_Props {
   color: string;
@@ -39,6 +42,11 @@ export const MiddleButton = styled.button<I_Props>`
   border-radius: 50px;
   outline: none;
   border: none;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 20px 5px 0 0;
+  }
   &:hover {
     background-color: ${(props) =>
       props.color === "green" ? "#5df5d7" : "#5dc4f5"};

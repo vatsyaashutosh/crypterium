@@ -29,7 +29,7 @@ export const Header = (props: Props) => {
   return (
     <HeaderMainDiv>
       <HeaderSubDiv>
-        <HeaderSubDivElements display={true}>
+        <HeaderSubDivElements displayy="flex">
           <HeaderLogo src={logo} />
         </HeaderSubDivElements>
       </HeaderSubDiv>

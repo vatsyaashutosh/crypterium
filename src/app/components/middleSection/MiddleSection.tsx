@@ -10,6 +10,7 @@ import {
 import progress from "../../../assets/images/progressbar.png";
 import { Header } from "../header/Header";
 
+
 export const MiddleSection = () => {
   return (
     <MiddleContainer0>

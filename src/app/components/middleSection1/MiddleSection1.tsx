@@ -1,4 +1,3 @@
-import React from "react";
 import logo1 from "../../../assets/images/a.png";
 import logo2 from "../../../assets/images/b.png";
 import logo3 from "../../../assets/images/c.png";
@@ -34,7 +33,14 @@ import {
   RelativeDiv,
   Span1,
 } from "./Style";
+import "aos/dist/aos.css";
+import Aos from "aos";
+import { useEffect } from "react";
+
 export const MiddleSection1 = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <MiddleContainer1>
       <LogoDiv>
@@ -45,12 +51,12 @@ export const MiddleSection1 = () => {
         <LogoImg src={logo5} />
       </LogoDiv>
       <FlexContainer>
-        <FlexContainerItems value={470}>
+        <FlexContainerItems data="fade-right" value={470}>
           <H5>OUR MISSION</H5>
           <H2>Crypterium is the Best Ceowdsale Service!</H2>
           <MidButton>Buy Tokens</MidButton>
         </FlexContainerItems>
-        <FlexContainerItems value={700}>
+        <FlexContainerItems data="fade-down" value={700}>
           <MidPara>
             JavaScript is also used in environments that aren’t web-based, such
             as PDF documents, site-specific browsers, and desktop widgets.
@@ -64,7 +70,7 @@ export const MiddleSection1 = () => {
           </MidPara>
         </FlexContainerItems>
       </FlexContainer>
-      <RelativeDiv>
+      <RelativeDiv data="fade-up">
         <MidImage src={bg2} />
         <AbsoluteDiv>
           <MidImage2 src={yt} />
@@ -74,7 +80,7 @@ export const MiddleSection1 = () => {
       <H5>MEET THE PRODUCT</H5>
       <H2>Beautiful, functional and nearly ready to launch</H2>
       <GridContainer>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g1} />
           <H3>Mobile App</H3>
           <GridPara>
@@ -83,7 +89,7 @@ export const MiddleSection1 = () => {
             bass
           </GridPara>
         </GridElement>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g2} />
           <H3>Insurance Protection</H3>
           <GridPara>
@@ -91,7 +97,7 @@ export const MiddleSection1 = () => {
             snapper; ghoul: sea raven. Barreleye slipmouth yellowfin grouper
           </GridPara>
         </GridElement>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g3} />
           <H3>Secure Storage</H3>
           <GridPara>
@@ -99,7 +105,7 @@ export const MiddleSection1 = () => {
             brook lamprey, rock cod Billfish, brook lamprey collared
           </GridPara>
         </GridElement>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g4} />
           <H3>Exchange Service</H3>
           <GridPara>
@@ -107,7 +113,7 @@ export const MiddleSection1 = () => {
             Sevan trout crocodile icefish collared carpetshark.
           </GridPara>
         </GridElement>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g5} />
           <H3>Credit Card Use</H3>
           <GridPara>
@@ -115,7 +121,7 @@ export const MiddleSection1 = () => {
             gray mullet boga prickly shark banjo catfish.
           </GridPara>
         </GridElement>
-        <GridElement>
+        <GridElement data="fade-up">
           <GridImg src={g6} />
           <H3>Multycurrency Wallet</H3>
           <GridPara>
