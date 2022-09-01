@@ -1,6 +1,7 @@
 import React from "react";
 import {
   A,
+  Br,
   LoginButton,
   LoginContainer,
   LoginDiv,
@@ -26,7 +27,7 @@ export const Login = () => {
             <LoginH1>Sign In</LoginH1>
             <LoginInput type="email" placeholder="Email" />
             <LoginInput type="password" placeholder="Password" />
-            <br />
+            <Br />
             <A>I forgot my password</A>
             <LoginButton>Submit</LoginButton>
             <LoginPara>

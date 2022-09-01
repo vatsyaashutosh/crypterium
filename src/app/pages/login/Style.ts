@@ -75,3 +75,4 @@ export const LoginPara = styled.p`
   color: #888a8b;
   text-align: center;
 `;
+export const Br = styled.br``;
