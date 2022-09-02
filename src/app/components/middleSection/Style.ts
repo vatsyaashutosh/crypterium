@@ -4,6 +4,7 @@ export const MiddleContainer0 = styled.div`
   width: 100%;
   height: 100vh;
   background-image: url(${bb});
+  position: relative;
 `;
 export const MiddleContainer = styled.div`
   max-width: 800px;

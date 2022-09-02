@@ -9,7 +9,7 @@ import {
 } from "./Style";
 import progress from "../../../assets/images/progressbar.png";
 import { Header } from "../header/Header";
-
+import { ModalBackground, ModalContainer } from "../header/Style";
 
 export const MiddleSection = () => {
   return (

@@ -39,7 +39,7 @@ import { useEffect } from "react";
 
 export const MiddleSection1 = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
   }, []);
   return (
     <MiddleContainer1>
