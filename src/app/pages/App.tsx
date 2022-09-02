@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "./App.css";
 import { HomePageContainer } from "./Styled";
 import { MiddleSection } from "../components/middleSection/MiddleSection";
